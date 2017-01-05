@@ -11,14 +11,7 @@ module.exports = {
         test: /\.js?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'stage-0', 'stage-1'],
-          plugins: [
-            'react-html-attrs',
-            'transform-class-properties',
-            'transform-decorators-legacy'
-          ]
-        },
+        query: { presets: ["react", "es2015", "stage-0"] }
       },
       { test: /\.(png|jpg)$/, loader: 'url-loader'}
     ]
@@ -30,6 +23,6 @@ module.exports = {
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false })
   ]
 };
