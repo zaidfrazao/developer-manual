@@ -27,7 +27,7 @@ module.exports = {
   },
   output: {
     path: __dirname + "/build",
-    filename: "index.bundle.js"
+    filename: "bundle.js"
   },
   eslint: {
     configFile: './.eslintrc'
