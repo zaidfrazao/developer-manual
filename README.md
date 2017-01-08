@@ -1,1 +1,1 @@
-# developer-manual
+# Encyclopedia Sportomatica: Sportomatic's Developer Reference
