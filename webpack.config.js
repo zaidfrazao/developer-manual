@@ -1,3 +1,5 @@
+/*eslint linebreak-style: ["error", "windows"]*/
+
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require("webpack");
 
